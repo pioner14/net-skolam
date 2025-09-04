@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница не найдена - net-skolam.ru</title>
+    <meta name="description" content="Страница не найдена. Вернитесь на главную страницу Центра ремонта автостекол в Ессентуках.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .error-content {
+            max-width: 600px;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        .error-message {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: var(--text-color);
+        }
+        .error-description {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-message">Страница не найдена</h1>
+            <p class="error-description">
+                К сожалению, запрашиваемая страница не существует или была перемещена. 
+                Возможно, вы перешли по неверной ссылке или ввели неправильный адрес.
+            </p>
+            <a href="/" class="button-large">Вернуться на главную</a>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+```html:thank-you.html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спасибо за обращение - net-skolam.ru</title>
+    <meta name="description" content="Спасибо за обращение в Центр ремонта автостекол в Ессентуках. Мы свяжемся с вами в ближайшее время.">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .thank-you-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .thank-you-content {
+            max-width: 600px;
+        }
+        .success-icon {
+            font-size: 4rem;
+            color: #25d366;
+            margin-bottom: 30px;
+        }
+        .thank-you-message {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        .thank-you-description {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-page">
+        <div class="thank-you-content">
+            <div class="success-icon">✓</div>
+            <h1 class="thank-you-message">Спасибо за обращение!</h1>
+            <p class="thank-you-description">
+                Ваше сообщение успешно отправлено. Мы свяжемся с вами в ближайшее время 
+                для уточнения деталей и записи на ремонт.
+            </p>
+            <a href="/" class="button-large">Вернуться на главную</a>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+```xml:sitemap.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://net-skolam.ru/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://net-skolam.ru/#services</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://net-skolam.ru/#gallery</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://net-skolam.ru/#testimonials</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://net-skolam.ru/#faq</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://net-skolam.ru/#contacts</loc>
+    <lastmod>2025-01-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
+```
+
+```txt:robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://net-skolam.ru/sitemap.xml
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+```
+
+## ✅ **Что добавлено:**
+
+1. **✅ Плавающие CTA кнопки** - Позвонить, WhatsApp, Telegram, Яндекс.Навигатор
+2. **✅ FAQ-аккордеон** - 5 частых вопросов с ответами
+3. **✅ OpenGraph/Twitter мета-теги** - для социальных сетей
+4. **✅ JSON-LD структурированные данные** - для поисковиков
+5. **✅ sitemap.xml и robots.txt** - для SEO
+6. **✅ Страницы 404 и спасибо** - для лучшего UX
+
+## 🎯 **Следующие шаги:**
+
+- Добавить виджет отзывов Яндекс/Google
+- Улучшить доступность (aria-label, фокус-стили)
+- Добавить аналитику для отслеживания конверсий
+
+Хотите, чтобы я продолжил с оставшимися пунктами?
+
