@@ -937,3 +937,95 @@ img {
     width: 100%;
   }
 }
+/* Карусель отзывов */
+.reviews-carousel-container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.reviews-carousel {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  overflow-x: hidden; /* Скрываем стандартный скролл */
+  scroll-behavior: smooth;
+}
+
+.review-card {
+  flex: 0 0 auto;
+  width: 300px;
+  background: var(--dark-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  color: var(--text-color);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Кнопки навигации */
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.carousel-prev,
+.carousel-next {
+  background: var(--primary-color);
+  color: var(--dark-bg);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  background: #e09a48;
+  transform: scale(1.1);
+}
+
+.carousel-prev:disabled,
+.carousel-next:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .review-card {
+    width: 280px;
+  }
+  
+  .carousel-prev,
+  .carousel-next {
+    width: 44px;
+    height: 44px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .review-card {
+    width: 260px;
+  }
+  
+  .reviews-carousel {
+    gap: 15px;
+  }
+}
